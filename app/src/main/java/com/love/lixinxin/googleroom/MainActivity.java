@@ -1,5 +1,6 @@
 package com.love.lixinxin.googleroom;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -47,6 +48,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnAdd.setOnClickListener(this);
         btnQuery.setOnClickListener(this);
         btnDel.setOnClickListener(this);
+
+
+        startActivity(new Intent(this, ViewPageActivity.class));
 
     }
 
